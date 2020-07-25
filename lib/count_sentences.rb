@@ -15,11 +15,8 @@ class String
   end
 
   def count_sentences
-    sent_count = 0
     sentences = self.split( /["?"".""!"]/ )
     sentences.delete("")
     sentences.count
-
-    #binding.pry
   end
 end
